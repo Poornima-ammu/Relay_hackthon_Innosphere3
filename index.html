@@ -1,77 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Mind</title>
-  <link rel="stylesheet" href="styles.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <script src="app.js" defer></script>
+ <title>Music</title>
 </head>
 <body>
-  <header>
-    <div class="logo">Music Mind</div>
-    <nav>
-      <ul>
-        <li><a id="homeLink" href="#Home">Home</a></li>
-        <li><a id="aboutLink" href="#About">About</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="homePage" class="page">
-    <section class="posts">
-      <article class="post" onclick="openArticle(0)">
-        <h2>The Art of Simplicity</h2>
-        <p class="subtitle">Why less really is more.</p>
-      </article>
-      <section>
-        <h2>Registration Form</h2>
-        <div>
-        <form>
-          <fieldeset>
-            <label>Name</label>
-            <input type="text" id="name"><br>
-            <label>Emai</label>
-            <input type="email" id="email"><br>
-            <label>Event Selection</label>
-            <select>
-              <option>Classical music</option>
-              <option>Folk</option>
-              <option>Devotional</option>
-            </select><br>
-          </fieldeset>
-          <button onclick="display()">Submit</button>
-          <p id="res"></p>
-        </form>
-        </div>
-         
-      
-
-      <article class="post" onclick="openArticle(1)">
-        <h2>Focus in a Distracted World</h2>
-        <p class="subtitle">Learning to stay present in chaos.</p>
-      </article>
-
-      <article class="post" onclick="openArticle(2)">
-        <h2>Designing Without Color</h2>
-        <p class="subtitle">The elegance of grayscale aesthetics.</p>
-      </article>
-
-    <footer>
-      <p>© <span id="footerYear"></span> Mediumish Blog</p>
-    </footer>
-  </main>
-
-  <section id="aboutPage" class="page hidden">
-    <h1>About</h1>
-    <p>This minimalist blog celebrates clean, distraction-free design.</p>
-  </section>
-
-  <section id="articlePage" class="page hidden">
-    <button id="backBtn">← Back to Home</button>
-    <div id="articleContent"></div>
-  </section>
-
-  <script src="script.js"></script>
+ <div class="container">
+ <form action="" id="form">
+ <h1>Register</h1>
+ <div class="input-group">
+ <label for="username">Username</label>
+ <input type="text" id="username" name="username">
+ <div class="error"></div>
+ </div>
+ <div class="input-group">
+ <label for="email">Email</label>
+ <input type="text" id="email" name="email" >
+ <div class="error"></div>
+ </div>
+ 
+ <div class="input-group">
+ <label for="cpassword">Event Selection</label>
+ <select>
+   <option>Classical</option>
+   <option>Folk</option>
+   <option>Devotional</option>
+ </select>
+ <div class="error"></div>
+ </div>
+ <button onclick="display">Register</button>
+ <p id="res"></p>
+ </form>
+ </div>
 </body>
 </html>
- 
