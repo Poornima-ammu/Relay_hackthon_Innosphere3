@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mediumish Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Music Mind</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="logo">Mediumish</div>
+    <div class="logo">Music Mind</div>
     <nav>
       <ul>
         <li><a id="homeLink" href="#Home">Home</a></li>
@@ -23,6 +23,28 @@
         <h2>The Art of Simplicity</h2>
         <p class="subtitle">Why less really is more.</p>
       </article>
+      <section>
+        <h2>Registration Form</h2>
+        <div>
+        <form>
+          <fieldeset>
+            <label>Name</label>
+            <input type="text" id="name"><br>
+            <label>Emai</label>
+            <input type="email" id="email"><br>
+            <label>Event Selection</label>
+            <select>
+              <option>Classical music</option>
+              <option>Folk</option>
+              <option>Devotional</option>
+            </select><br>
+          </fieldeset>
+          <button onclick="display()">Submit</button>
+          <p id="res"></p>
+        </form>
+        </div>
+         
+      
 
       <article class="post" onclick="openArticle(1)">
         <h2>Focus in a Distracted World</h2>
@@ -53,4 +75,3 @@
 </body>
 </html>
  
-
